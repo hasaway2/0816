@@ -1,0 +1,72 @@
+  /* 
+      나눔고딕 웹폰트를 가져온다
+      웹폰트 자체도 외부 CSS이며 외부 CSS를 가져오는 방법은 <link>와 @import가 있다
+      @importㄹ
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Nanum+Gothic&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+
+    #app {
+      width: 1200px;
+      margin : 0 auto;
+     }
+
+    header, nav, footer {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    header, footer {
+      border: 1px solid gray;
+    }
+
+    nav {
+      border: 1px solid skyblue;
+    }
+
+    main {
+      display: flex;
+    }
+
+    aside {
+      flex-basis: 0;
+      flex-grow: 1;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      border: 1px solid blueviolet;
+    }
+
+    section {
+      flex-basis: 0;
+      flex-grow: 6;
+      background-color: #f1f1f1;
+      min-height: 800px;
+      padding: 10px;
+    }
+
+    section table img {
+      height: 50px;
+    }
+
+    section table th {
+      text-align: center;
+    }
+
+    section table td {
+      /* 이미지 출력 때문에 td의 높이가 높아져서 수직 가운데 정렬이 되지 않는다. 수직 가운데 정렬한다 */
+      vertical-align: middle;
+    }
+
+    .pagination {
+      /* pagination을 수평 가운데 정렬 */
+      justify-content: center;
+    }
